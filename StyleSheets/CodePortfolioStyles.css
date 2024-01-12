@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*I'm leaving the notes I set up in the template this time.  Normally I'd remove them all, but github tracks changes so leaving them to delete later feels like good bookkeeping
+/* Fonts! 
+Change the format to match whatever filetype the font is.
+*/
+@font-face {
+	font-family: '_______';
+	src: url('../Fonts/_______.ttf') format('truetype');
+}
+
+/*Main Styles */
+
+/* this one sets the background */
+body{
+	/*I use this silk texture as a background for all my mod banners and model renders.  So I'll use it here to keep it consistent*/
+	background-image: url("../Images/SilkBG.png");
+
+}
+/* verdana, sans-serif seems like a pretty standard fallback, but change them to match the vibe of the site */
+body h1{
+	font-family: '______', Verdana, sans-serif;
+	/*white text, 5em size */
+	color: white;
+	font-size: 5em;
+	/*this just adds a black outline around the H1 */
+	text-shadow: 1px 1px 1px black;
+}
+
+body{
+	/*the body can match the H1,  this just doesn't have the font size setting by default */
+		color: white;
+		text-shadow: 1px 1px 1px black;
+		font-family: '_____', Verdana, sans-serif;
+}
+
+
+/*Nav styles */
+nav ul{
+	/*removes the bullet points from any list */ 
+	list-style: none;
+}
+
+/*change the link color of unclicked links. OG settings here make it white with a black outline */
+nav a:link {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px black;
+}
+/* nav section, anchors, visited (clicked) colors */
+nav a:visited {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px black;
+
+}
+/*these can be removed if my navbar doesn't have subitems. */
+/*
+.submenu a:link {
+	color: black;
+	}
+	
+.submenu a:visited{
+	color: black;
+}
+*/
+/*makes the submenu white on hover.  Change this to match the background.  or remove it, whatever floats my boat at the time*/ 
+/*
+.navMenu:hover .submenu {
+		background-color:white;
+    }	
+	*/
+/* Table Styles */
+
+/*table category styles */
+/*
+table {
+	background-color: gray;
+	border-collapse: separate;
+	border-style: solid;
+}
+
+	
+table tbody th{
+	background-color: black;
+}
+table tbody td{
+	padding: 10px;
+	text-align: Center;
+}
+table tfoot td{
+	font-weight:bold;
+	font-size: 10px;
+}
+/*table links*/
+/*
+table a:link{
+color: white;}
+
+table a:visited{
+	color:white;
+}
+*/
+
+
+/*MOBILE STYLES 
+	For phones */
+@media only screen and (min-width:320px) and (max-width: 801px){}
+/*DESKTOP STYLES.
+	If I want the text to be bright yellow on an orange background, but only for mobile users I can change that here*/
+@media only screen and (min-width: 801px){}

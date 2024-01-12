@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* If anyone but me see's these notes please remind me to remove them next time! 
+Just like the style template I'm commenting out sections that might not be needed in most cases.  Just delete them once the site is ready */
+
+*/
+
+/*Main Body Layouts */
+
+p{
+    clear: both;
+}	
+
+.logo{
+		margin: auto;
+		width: 50%;
+		padding: 10px;
+}
+
+.logo img{
+	display: block;
+	width: 480px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Desktop/tablet options.  Anything bigger than a phone really.*/
+@media only screen and (min-width: 801px){
+
+/*desktop nav layout */
+    a#navicon{
+        display:none;
+    }
+	.navMenu{
+        display:block;
+        float:left;
+        width:25%;
+    }
+.submenu{
+        display:none;
+		position: absolute;
+		width: 25%;
+    }	
+.navMenu:hover .submenu {
+        display: block;
+        float:left;
+		width: 10em;
+    }	
+
+
+}
+nav{
+padding-top: 5%;
+padding-bottom: 20%;
+}	
+	/*MOBILE SECTION */
+@media only screen and (min-width:320px) and (max-width: 801px){
+
+		/*MOBILE NAV MENU*/
+/*hides the normal nav menu on mobile*/
+.navMenu{
+	display: none;
+
+}
+.submenu{
+	display:none;
+}
+a#navicon{
+	display:block;
+}   
+
+	/*this makes the navmenu display when the nav icon is clicked.  the lynchpin of the whole operation */
+a#navicon:hover~.navMenu, .navMenu:hover{
+	display:block;
+	width: 60%;
+	margin: 20px;
+}
+
+a#navicon:active~.navMenu, .navMenu:active{
+	display:block;
+	width: 60%;
+	margin: 20px;
+}
+.navMenu:hover .submenu{
+	display: block;
+	margin: 10px;
+}
+
+.navMenu:active .submenu{
+	display: block;
+	margin: 10px;
+}
+.submenu ul li{
+	margin:20px;
+}
+
+/* Mobile Header */
+.logo{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+.logo img{
+	display: block;
+	width: 240px;
+	height: 125px;
+	margin-left: auto;
+	margin-right: auto;	   
+}
+
