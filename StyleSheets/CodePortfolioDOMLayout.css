@@ -1,0 +1,10 @@
+#domContainer{
+width: 80%;
+margin: auto;
+outline-style: solid;
+outline-color: white;
+}
+button
+{
+    margin-left: 40%;
+}
