@@ -1,0 +1,61 @@
+.buttonDiv
+{
+    text-align: center;
+    width: 15%;
+    margin-left: 30%;
+}
+
+#btnLeft
+{
+filter: invert(1);
+max-width:50%;
+float: left;
+margin: auto;
+}
+
+#btnRight
+{
+filter: invert(1);
+max-width: 50%;
+
+}
+#projform{
+    border-style: solid;
+    border-color: white;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=text]
+{
+    width:100%;
+}
+#textinput
+{
+margin-left: 50%;    
+display: block;
+}
+.textFieldDiv
+{
+float:left;
+display:block;
+width: 50%;
+}
+
+
+/*Mobile form */
+@media only screen and (min-width:320px) and (max-width: 801px)
+{
+#btnLeft
+{
+max-width: 100%;
+
+}    
+#btnRight
+{
+
+max-width: 100%;
+}
+}
