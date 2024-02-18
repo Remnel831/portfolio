@@ -3,6 +3,7 @@ const leftArrow = document.querySelector("#btnLeft");
 const rightArrow = document.querySelector("#btnRight");
 //set up form
 const form = document.getElementById("projform")
+
 //color cycles here.  RGBYP, PYBGR.
 var ForwardColor = ["red", "green", "blue", "yellow", "purple"];
 var BackwardColor = ["purple", "yellow", "blue", "green", "red"];
@@ -38,6 +39,8 @@ const CycleFoward = () =>  cycleInterval = setInterval(() => {form.style.borderC
 const CycleBackward = () =>  cycleInterval = setInterval(() => {form.style.borderColor = BackwardColor[colorIndex];
     colorIndex = (colorIndex +1 ) % BackwardColor.length
 }, textBoxCheck());
+
+
 //sets up the mousedown for left arrow to call cycleBackward
 leftArrow.addEventListener('mousedown', CycleBackward);
 //mouseup clears the interval so it stops cycling.  The index stays though or else it would go back to the first color every time
