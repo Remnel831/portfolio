@@ -11,7 +11,7 @@ Change the format to match whatever filetype the font is.
 /*Main Styles */
 
 /* this one sets the background */
-*{
+body{
 	/*I use this silk texture as a background for all my mod banners and model renders.  So I'll use it here to keep it consistent*/
 	background-image: url("../Images/SilkBG.png");
 
