@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+#racetrack{
+margin: auto;
+max-width: 25%;
+max-height: 25%;  
+outline-style: solid;  
+outline-offset: 25px;
+}
+#raceAnnounce{
+    text-align: center;
+}
+#racer1bar {       
+    width: 2%; 
+    height: 20px; 
+    font-size: 10px;
+    background-color: red; 
+    } 
+#racer2bar {       
+    width: 2%; 
+    height: 20px; 
+    font-size: 10px;
+    background-color: blue; 
+    }     

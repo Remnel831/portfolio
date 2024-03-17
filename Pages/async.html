@@ -3,10 +3,11 @@
 	<head>
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>Loops and Conditionals</title>
+			<title>Async Racetrack</title>
 			<link href ="../StyleSheets/CodePortfolioStyles.css"  rel="stylesheet"/>
 			<link href ="../StyleSheets/CodePortfolioLayout.css" rel="stylesheet"/>
-			<script src="../Javascript/loopsandConditions.js" defer></script>
+            <link href ="../StyleSheets/RaceBars.css" rel = "stylesheet"/>
+			<script src="../Javascript/async.js" defer></script>
 
 	</head>
 	<body>
@@ -34,13 +35,16 @@
 								<div class="submenu">
 									<li><div class="submenuItem"><a href=Objects.html>Objects</a></div></li>
 									<li><div class="submenuItem"><a href=Closures.html>Closures</a></div></li>
-									<li><div class="submenuItem"><a href=async.html>Async</a></div></li>
+									<li><div class="submenuItem"><a href=Async.html>Async</a></div></li>
 								</div>
 							</ul>	
 						</div>
 			</nav>
 		</header>
-		<h2>Loops and Conditionals</h2>
-		<p>Check the console!</p>		
+        <div id = "racetrack">
+            <div id ="raceAnnounce">Race in progress: </div>
+            <div id = "racer1bar">Racer 1</div>
+            <div id = "racer2bar">Racer 2</div>
+        </div>
 	</body>
 </html>	
