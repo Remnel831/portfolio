@@ -125,7 +125,7 @@ function onRightButtonClick()
         CharacterPhoto.src = Roster[i].characterphoto;     
         buttonLeft.disabled = false;
         Char = Roster[i];
-        if (i ==0){
+        if (i == 0){
             buttonLeft.disabled = true;
         }
         if (i == (length-1)){
