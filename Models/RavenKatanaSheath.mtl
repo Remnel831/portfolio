@@ -13,6 +13,7 @@ Pcr 0.030000
 aniso 0.000000
 anisor 0.000000
 map_Kd Textures/Sheath/Katana_Sheath_Bake1_PBR_Diffuse.png
+map_Ka Textures/Sheath/Katana_Sheath_Bake1_PBR_Ambient Occlusion.png
 map_Pm Textures/Sheath/Katana_Sheath_Bake1_PBR_Metalness.png
 map_Pr Textures/Sheath/Katana_Sheath_Bake1_PBR_Roughness.png
 map_Bump -bm 1.000000 Textures/Sheath/Katana_Sheath_Bake1_PBR_Normal.png
@@ -30,5 +31,6 @@ Pcr 0.030000
 aniso 0.000000
 anisor 0.000000
 map_Kd Textures/Sheath/Katana_Sheath_Wrap_Bake1_PBR_Diffuse.png
+map_Ka Textures/Sheath/Katana_Sheath_Wrap_Bake1_PBR_Ambient Occlusion.png
 map_Pr Textures/Sheath/Katana_Sheath_Wrap_Bake1_PBR_Roughness.png
 map_Bump -bm 1.000000 Textures/Sheath/Katana_Sheath_Wrap_Bake1_PBR_Normal.png
