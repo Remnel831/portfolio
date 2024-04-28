@@ -66,11 +66,13 @@
             animation__mouseenter="property: object3D.position.x; to: 2; dir: alternate; dur: 4000; loop: true; startEvents: mouseenter"
             animation__mouseleave="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
             ></a-box>
+            <a-box color="brown" position="1 0 0" scale="0.1 2 1"></a-box>
+            <a-box color="brown" position="-1 0 0" scale="0.1 2 1"></a-box>
             <a-dodecahedron id="mover" shadow="cast: true" 
             animation__mouseenter="property: object3D.position.x; to: 2; dir: alternate; dur: 4000; loop: true; startEvents: mouseenter"
             color="#FF926B" radius="1" position="0 4 0">
             </a-dodecahedron>
-            <a-gltf-model src="../../Models/FalconessSword.glb"s></a-gltf-model>
+            <a-obj-model src="../../Models/RavenKatana.obj" position="0 1 0" shadow="cast: true"></a-obj-model>
             <a-plane color="#CCC" shadow="receive: true" height="20" width="20" rotation="-90 0 0"></a-plane>
             <a-entity light="type: point; castShadow: true; intensity: 0.5; color: #e6ffb0;" position="-1 5 0">
                 <a-entity light="type: ambient; color: #BBB"></a-entity>
