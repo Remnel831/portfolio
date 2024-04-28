@@ -3,10 +3,10 @@
 	<head>
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>Array Methods</title>
+			<title>A-Framework VR</title>
 			<link href ="../../StyleSheets/CodePortfolioStyles.css"  rel="stylesheet"/>
 			<link href ="../../StyleSheets/CodePortfolioLayout.css" rel="stylesheet"/>
-			<script src="../../Javascript/Unit3/ArrayMethods.js" defer></script>
+            <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 
 
 	</head>
@@ -45,24 +45,35 @@
 							<ul>
 								<div class="submenu">
 									<li><div class="submenuItem"><a href=ArrayMethods.html>Array Methods</a></div></li>
-									<li><div class="submenuItem"><a href=Algorithms.html>Algorithms</a></div></li>
-									<li><div class="submenuItem"><a href=vr.html>VR</a></div></li>
+                                    <li><div class="submenuItem"><a href=Algorithms.html>Algorithms</a></div></li>
+                                    <li><div class="submenuItem"><a href=vr.html>VR</a></div></li>
 							</ul>
 						</div>
 			</nav>
 		</header>	
-
-		<input type="text" id="inputText">
-		<button id="PushButton">Push</button>
-		<button id="PopButton">Pop</button>
-		<button id="ShiftButton">Shift</button>
-		<button id="UnshiftButton">Unshift</button>
-		<button id="MapButton">Map</button>
-
-		<p id="outputPara"></p>
-
-
-
-
+        <a-scene>   
+            
+            <a-sky color="#96f5ff"></a-sky>
+            <a-entity camera look-controls wasd-controls position="0 1.6 5">
+                <a-entity cursor="fuse: true; fuseTimeout: 500"
+                position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                material="color: black; shader: flat">
+                 </a-entity>
+            </a-entity>
+            <a-ring color="teal"  radius-inner="1" radius-outer="2" position="5 2 0"></a-ring>
+            <a-box color="red" shadow="cast: true" width="3" position="-5 2 0"
+            animation__mouseenter="property: object3D.position.x; to: 2; dir: alternate; dur: 4000; loop: true; startEvents: mouseenter"
+            animation__mouseleave="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+            ></a-box>
+            <a-dodecahedron id="mover" shadow="cast: true" 
+            animation__mouseenter="property: object3D.position.x; to: 2; dir: alternate; dur: 4000; loop: true; startEvents: mouseenter"
+            color="#FF926B" radius="1" position="0 4 0">
+            </a-dodecahedron>
+            <a-gltf-model src="../../Models/FalconessSword.glb"></a-gltf-model>
+            <a-plane color="#CCC" shadow="receive: true" height="20" width="20" rotation="-90 0 0"></a-plane>
+            <a-entity light="type: point; castShadow: true; intensity: 0.5; color: #e6ffb0;" position="-1 5 0">
+                <a-entity light="type: ambient; color: #BBB"></a-entity>
+        </a-scene>
 	</body>
 </html>	
